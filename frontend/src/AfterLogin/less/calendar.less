@@ -1,0 +1,32 @@
+.scheduler-container {
+  height: calc(100vh - 200px);
+  width: 80vw;
+  overflow-y: auto;
+  position: absolute;
+  left: -30%;
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+  border-radius: 10px;
+  opacity: 0.9;
+}
+
+.dhx_cal_event {
+  z-index: 1;
+  cursor: pointer;
+}
+.event_true div,
+.dhx_cal_editor.event_true,
+.dhx_cal_event_line.event_true {
+  background-color: #ff9633 !important;
+  text-decoration: line-through rgb(47, 69, 233);
+}
+.dhx_cal_event_clear.event_true {
+  color: #ff9633 !important;
+  text-decoration: line-through rgb(43, 111, 222);
+}
+
+@media screen and (max-width: 768px) {
+  .scheduler-container {
+    position: absolute;
+    left: 0;
+  }
+}

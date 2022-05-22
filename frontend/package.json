@@ -1,0 +1,107 @@
+{
+  "name": "stat-up-page-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/compatible": "^1.1.0",
+    "@emailjs/browser": "^3.6.2",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.19.5",
+    "axios": "^0.26.1",
+    "boxicons": "^2.1.2",
+    "customize-cra": "^1.0.0",
+    "customize-cra-less-loader": "^2.0.0",
+    "dhtmlx-gantt": "^7.1.11",
+    "dhtmlx-scheduler": "^5.3.14",
+    "enquire-js": "^0.2.1",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "moment": "^2.29.3",
+    "nanoid": "^3.3.4",
+    "prop-types": "^15.8.1",
+    "rc-banner-anim": "^2.4.5",
+    "rc-queue-anim": "^2.0.0",
+    "rc-scroll-anim": "^2.7.6",
+    "rc-tween-one": "^3.0.6",
+    "react": "^17.0.2",
+    "react-app-rewired": "^2.2.1",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-card-flip": "^1.1.5",
+    "react-countdown": "^2.3.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.30.0",
+    "react-loader-spinner": "^6.0.0-0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.0",
+    "react-speech-recognition": "^3.9.0",
+    "react-transition-group": "^4.4.2",
+    "styled-components": "^5.3.5",
+    "web-vitals": "^2.1.4",
+    "workbox-background-sync": "^6.5.3",
+    "workbox-broadcast-update": "^6.5.3",
+    "workbox-cacheable-response": "^6.5.3",
+    "workbox-core": "^6.5.3",
+    "workbox-expiration": "^6.5.3",
+    "workbox-google-analytics": "^6.5.3",
+    "workbox-navigation-preload": "^6.5.3",
+    "workbox-precaching": "^6.5.3",
+    "workbox-range-requests": "^6.5.3",
+    "workbox-routing": "^6.5.3",
+    "workbox-strategies": "^6.5.3",
+    "workbox-streams": "^6.5.3"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:3001/",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@types/jest": "^27.4.1",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
+    "babel-jest": "^28.0.2",
+    "babel-plugin-import": "^1.13.5",
+    "dotenv": "^16.0.1",
+    "enzyme": "^3.11.0",
+    "jest-enzyme": "^7.1.2",
+    "jest-mock-axios": "^4.6.1",
+    "react-test-renderer": "^17.0.2"
+  },
+  "jest": {
+    "resetMocks": false,
+    "moduleNameMapper": {
+      "__test__": "<rootDir>/src/__tests__"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!@rc-tween-one)/"
+    ]
+  }
+}

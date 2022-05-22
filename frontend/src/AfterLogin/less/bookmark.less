@@ -1,0 +1,285 @@
+@import "~antd/dist/antd.css";
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+
+.tabs {
+  width: 50vw;
+  //max-width: 600px;
+  //min-width:500px;
+  height: 60vh;
+  margin: 20px auto;
+  padding: 2vw;
+  align-items: center;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .5);
+  box-shadow: 10px 10px 5px 0px rgba(15, 15, 15, 0.404);
+	// -webkit-backdrop-filter: blur(10px);
+	// backdrop-filter: blur(10px);
+  /*border: 1px solid lightgrey;*/
+}
+
+.myBookmark {
+  
+  width: 100%;
+  margin: 0 auto;
+  padding: 2vh 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  height: 45vh;
+  overflow: scroll;
+}
+.myBookmark::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+ /* bookmark list */
+
+.myBookmark .bmList,
+.AddButton {
+  width: 20%;
+  min-width: 55px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.myBookmark .bmList .bmholder{
+  width: 100%;
+  height: 150px;
+  padding: 20px 10px 0 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.myBookmark .bmList .bmholder:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+.AddButton:hover{
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.myBookmark .bmListImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  background-color:transparent ;
+}
+.myBookmark .bmListImage img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.myBookmark .bmListName{
+margin: 10px 0;
+}
+.myBookmark .bmListName p{
+  color: black;
+  font-size: 14px;
+  max-width: 100px;
+  min-width: none;
+  max-height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+
+  /* bookmark list remove button */
+  .myBookmark .bmList .button-28 {
+  width: 100%;
+  min-width: 55px;
+  height: 30px;
+  appearance: none;
+  background-color: transparent;
+  border: 0px solid #eeeded;
+  color: #8d8d8d;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding: 0 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.myBookmark .bmList .button-28:disabled {
+  pointer-events: none;
+}
+
+.myBookmark .bmList .button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.myBookmark .bmList .button-28 .label:after{
+  content:'';
+}
+.myBookmark .bmList .button-28:hover .label:after{
+  content:'REMOVE';
+}
+.myBookmark .bmList .button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* bookmark modal form*/
+  
+.addBookmark form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.addBookmark form div {
+  display: flex;
+  flex-direction: column;
+}
+.addBookmark form .formTitle,
+.addBookmark form .formLabel {
+  margin: 10px auto 10px 0;
+  color: black;
+  font-size: 14px;
+}
+.addBookmark form input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 10px;
+}
+
+.AddButton img {
+  width: 50%;
+  margin: 5px auto;
+}
+
+/* multiple tabs card container*/
+.card-container {
+  margin: 0;
+  
+}
+.card-container > .ant-tabs-card .ant-tabs-content {
+  /*height: 450px;*/
+  min-width: 450px;
+  background-color:transparent;
+  margin-top: -16px;
+}
+.card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane {
+  padding: 16px;
+  background-color:transparent;
+}
+.card-container > .ant-tabs-card > .ant-tabs-nav::before {
+  display: none;
+}
+.card-container > .ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab{
+  background-color:transparent;
+  border-color: 1px solid #fff;
+}
+.card-container > .ant-tabs-card .ant-tabs-nav-list .ant-tabs-tab-active{
+  background-color:#2A76EC;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.card-container > .ant-tabs-card .ant-tabs-tab .ant-tabs-tab-btn{
+  color:black;
+  
+}
+.card-container > .ant-tabs-card .ant-tabs-tab-active .ant-tabs-tab-btn{
+  color:#fff;
+  
+}
+.card-container > .ant-tabs-card .ant-tabs-tab-active button span{
+  color:#fff;
+  
+}
+.card-container > .ant-tabs-card .ant-tabs-tab-active button span:hover{
+  color:red;
+  
+}
+.card-container > .ant-tabs-card .ant-tabs-nav-list .ant-tabs-nav-add,
+.card-container > .ant-tabs-card .ant-tabs-nav-operations .ant-tabs-nav-add
+{
+  background-color:transparent;
+  border-color: 1px solid #fff;
+
+}
+@media screen and (max-width: 1928px){
+  .AddButton{
+  height:140px;
+  }
+}
+
+
+@media screen and (max-width: 1536px){
+  .tabs {
+    padding: 20px;
+  }
+  .myBookmark {
+    padding: 10px;
+    height:44vh;
+    overflow: scroll;
+  }
+  .myBookmark .bmList,
+  .AddButton {
+    height: 140px;
+    margin: 5px 0;
+  }
+  .myBookmark .bmList .bmholder{
+    height: 110px;
+  }
+  /*.ant-tabs-content-holder {
+    height: 46vh;
+  }
+  .card-container > .ant-tabs-card .ant-tabs-content > .ant-tabs-tabpane{
+    height: 340px;
+  }*/
+}
+
+@media screen and (max-width: 768px){
+  .myBookmark {
+    width: 40vw;
+    padding: 10px;
+    max-height: 330px;
+    overflow:scroll;
+  }
+  .myBookmark .bmList,
+  .AddButton{
+    width: 48%;
+  }
+  .myBookmark .bmList .button-28{
+    padding:0 5px;
+  }
+  .card-container > .ant-tabs-card .ant-tabs-content{
+    min-width: 150px;
+    
+  }
+}
+@media screen and (max-width: 1201px){
+  .myBookmark .bmList .button-28:hover .label:after{
+    content:'X';
+  }
+}
